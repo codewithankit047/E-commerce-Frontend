@@ -6,6 +6,7 @@ import Footer from "./Component/Footer";
 import SignUp from "./Component/Signup";
 import Home from "./Component/Home";
 import PrivateRoute from "./Component/PrivateRoute";
+import Login from "./Component/Login";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           </Route>
 
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

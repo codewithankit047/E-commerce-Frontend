@@ -118,13 +118,25 @@ const Header = () => {
                     Logout
                   </Link>
                 ) : (
-                  <Link
-                    to="/signup"
-                    className="nav-link active"
-                    aria-current="page"
-                  >
-                    Signup
-                  </Link>
+                  <>
+                    <div className="d-flex">
+                      <Link
+                        to="/signup"
+                        className="nav-link active"
+                        aria-current="page"
+                      >
+                        Signup
+                      </Link>
+
+                      <Link
+                        to="/login"
+                        className="nav-link active"
+                        aria-current="page"
+                      >
+                        Login
+                      </Link>
+                    </div>
+                  </>
                 )}
               </li>
             </ul>
