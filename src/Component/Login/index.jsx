@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -14,27 +14,32 @@ const Login = () => {
   //       navigate("/");
   //     }
   //   }, []);
+  useEffect(() => {
+    const auth = localStorage.getItem("user");
+    if (auth) {
+      navigate("/dashboard");
+    }
+  }, []);
 
   const loginfunc = async () => {
-    console.log("loginData", loginData);
-    //     let result = await fetch("http://localhost:5000/register", {
-    //       method: "POST",
-    //       body: JSON.stringify(singupdata),
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //     });
-    //     result = await result.json();
-    //     console.log(result);
-    //     if (result) {
-    //       navigate("/dashboard");
-    //       localStorage.setItem("user", JSON.stringify(result));
-    //       localStorage.setItem("token", JSON.stringify(result.auth));
-
-    //       navigate("/");
-    //     } else {
-    //       alert("Error in Sign Up!");
-    //     }
+    let result = await fetch("http://localhost:5000/login", {
+      method: "POST",
+      body: JSON.stringify(loginData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    result = await result.json();
+    console.log(result);
+    if (
+      result.result === "No user Found" ||
+      result.result === "enter valid details"
+    ) {
+      alert("Enter valid details");
+    } else {
+      localStorage.setItem("user", JSON.stringify(result));
+      navigate("/dashboard");
+    }
   };
   return (
     <>
@@ -52,7 +57,7 @@ const Login = () => {
               </div>
               <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                 <form>
-                  <h2 className="fw-bold mb-5 text-center">Sign up now</h2>
+                  <h2 className="fw-bold mb-5 text-center">Login now</h2>
 
                   {/* Email input */}
                   <div className="form-outline mb-4">

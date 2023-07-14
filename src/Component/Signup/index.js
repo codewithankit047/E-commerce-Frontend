@@ -14,7 +14,7 @@ const SignUp = () => {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (auth) {
-      navigate("/");
+      navigate("/dashboard");
     }
   }, []);
 
@@ -34,7 +34,7 @@ const SignUp = () => {
       localStorage.setItem("user", JSON.stringify(result));
       localStorage.setItem("token", JSON.stringify(result.auth));
 
-      navigate("/");
+      navigate("/dashboard");
     } else {
       alert("Error in Sign Up!");
     }
