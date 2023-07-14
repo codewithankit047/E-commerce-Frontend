@@ -1,7 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   const auth = localStorage.getItem("user");
+  //   if (!auth) {
+  //     navigate("/");
+  //   }
+  // });
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
