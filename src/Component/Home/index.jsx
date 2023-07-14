@@ -1,8 +1,10 @@
 import React from "react";
+import Header from "../Header";
 
 const Home = () => {
   return (
     <>
+    <Header/>
       <section className="bg-dark dark-mode position-relative min-vh-100 overflow-hidden pt-5">
         <svg
           className="position-absolute top-0"

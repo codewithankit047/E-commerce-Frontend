@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const DashboardHeader = () => {
   const navigate = useNavigate();
   const auth = localStorage.getItem("user");
+
   const logout = () => {
     localStorage.clear();
     navigate("/");
+    window.location.reload(false);
   };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/dashboard">
             ShopNip
           </a>
           <button
@@ -29,8 +31,36 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">
-                  Home
+                <Link
+                  to="/dashboard"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Dashboard
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/add" className="nav-link active" aria-current="page">
+                  Add Products
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/update"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Update Products
+                </Link>
+              </li>
+
+              <li className="nav-item ">
+                <Link
+                  to="/profile"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Profile
                 </Link>
               </li>
 
@@ -93,27 +123,7 @@ const Header = () => {
                   >
                     Logout
                   </Link>
-                ) : (
-                  <>
-                    <div className="d-flex">
-                      <Link
-                        to="/signup"
-                        className="nav-link active"
-                        aria-current="page"
-                      >
-                        Signup
-                      </Link>
-
-                      <Link
-                        to="/login"
-                        className="nav-link active"
-                        aria-current="page"
-                      >
-                        Login
-                      </Link>
-                    </div>
-                  </>
-                )}
+                ) : null}
               </li>
             </ul>
           </div>
@@ -123,4 +133,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default DashboardHeader;

@@ -7,26 +7,24 @@ import SignUp from "./Component/Signup";
 import Home from "./Component/Home";
 import PrivateRoute from "./Component/PrivateRoute";
 import Login from "./Component/Login";
+import Dashboard from "./Component/Dashboard";
+import AddProduct from "./Component/Product/AddProduct";
+import UpdateProduct from "./Component/Product/updateProduct";
+import Profile from "./Component/Product/Profile";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route element={<PrivateRoute />}>
-            <Route
-              path="/dashboard"
-              element={<h1>E-commerce Dashboard page</h1>}
-            />
-            <Route path="/add" element={<h1>Add product component page</h1>} />
-            <Route
-              path="/update"
-              element={<h1>update product component page</h1>}
-            />
-            <Route path="/logout" element={<h1> Logout page</h1>} />
-            <Route path="/profile" element={<h1> profile page</h1>} />
+            <Route path="/" element={<Home />} />
+
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/add" element={<AddProduct />} />
+            <Route path="/update" element={<UpdateProduct />} />
+            <Route path="/profile" element={<Profile />} />
           </Route>
 
           <Route path="/signup" element={<SignUp />} />
