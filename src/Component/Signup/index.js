@@ -8,19 +8,20 @@ const SignUp = () => {
     lastname: "",
     email: "",
     password: "",
-    subscribe: "",
+    subscribe: true
   });
   const signupfunc = async () => {
     console.log("singupData", singupdata);
     let result = await fetch("http://localhost:5000/register", {
       method: "POST",
-      body: JSON.stringify({ singupdata }),
+      body: JSON.stringify(singupdata),
       headers: {
         "Content-Type": "application/json",
       },
     });
     result = await result.json();
     console.log(result);
+    localStorage.setItem("user", JSON.stringify(result));
     if (result) {
       navigate("/dashboard");
     } else {

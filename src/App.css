@@ -1,0 +1,15 @@
+.parallax-layer img {
+  width: 20%;
+}
+.parallax-layer img {
+  display: flex;
+  width: 64rem;
+  align-items: center;
+}
+.parallax {
+  max-width: 1606px;
+  display: flex;
+}
+.display-5  {
+  color: white !important;
+}

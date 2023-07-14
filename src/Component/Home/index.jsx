@@ -29,7 +29,7 @@ const Home = () => {
               <span className="text-white">Ar</span>
               <img
                 className="flex-shrink-0 mt-2"
-                src="../assets/img/landing/intro/avatar.png"
+                src="https://around.createx.studio/assets/img/landing/intro/avatar.png"
                 width={51}
                 alt="Image"
               />
@@ -40,15 +40,6 @@ const Home = () => {
             And you will find everything you need to build a great looking
             website
           </p>
-          <a
-            className="scroll-down-btn"
-            href="#landings"
-            data-scroll=""
-            data-scroll-offset={20}
-          >
-            <div className="mouse" />
-            <p>Landings</p>
-          </a>
         </div>
         <div className="d-none d-lg-block" style={{ marginTop: "-80px" }} />
         <div
@@ -58,25 +49,25 @@ const Home = () => {
         <div className="parallax mx-auto mb-n5" style={{ maxWidth: 1606 }}>
           <div className="parallax-layer" data-depth="-0.1">
             <img
-              src="assets/img/landing/intro/hero/01.png"
+              src="https://around.createx.studio/assets/img/landing/intro/hero/01.png"
               alt="Background shapes"
             />
           </div>
           <div className="parallax-layer zindex-2" data-depth="0.12">
             <img
-              src="assets/img/landing/intro/hero/02.png"
+              src="https://around.createx.studio/assets/img/landing/intro/hero/02.png"
               alt="Foreground shape"
             />
           </div>
           <div className="parallax-layer zindex-2" data-depth="0.35">
             <img
-              src="assets/img/landing/intro/hero/03.png"
+              src="https://around.createx.studio/assets/img/landing/intro/hero/02.png"
               alt="Foreground shape"
             />
           </div>
           <div className="parallax-layer zindex-2" data-depth="0.23">
             <img
-              src="assets/img/landing/intro/hero/04.png"
+              src="https://around.createx.studio/assets/img/landing/intro/hero/04.png"
               alt="Foreground shape"
             />
           </div>
@@ -128,26 +119,8 @@ const Home = () => {
                     Coming Soon.
                   </p>
                 </div>
-                <div className="d-lg-none">
-                  <h2 className="display-5 mb-4">
-                    Inner pages for everything you may need
-                  </h2>
-                  <p className="fs-lg text-dark pb-3 pb-sm-4 mb-lg-0">
-                    Big collection of thoroughly designed inner page templates
-                    from User Account/Dashboard to Specialty pages like 404 and
-                    Coming Soon.
-                  </p>
-                </div>
               </div>
             </div>
-            <div
-              className="d-none d-xl-block"
-              style={{ marginTop: "-240px" }}
-            />
-            <div
-              className="d-none d-lg-block d-xl-none"
-              style={{ marginTop: "-160px" }}
-            />
           </div>
         </section>
 
@@ -161,7 +134,7 @@ const Home = () => {
               <div className="pe-md-3 pe-lg-3 pe-xl-5">
                 <img
                   className="d-inline-block mb-3 mb-lg-4"
-                  src="assets/img/landing/intro/features/bootstrap.png"
+                  src="https://around.createx.studio/assets/img/landing/intro/features/bootstrap.png"
                   width={56}
                   alt="Bootstrap"
                 />
@@ -178,7 +151,7 @@ const Home = () => {
               <div className="ps-md-3 px-lg-2 px-xl-4">
                 <img
                   className="d-inline-block mb-3 mb-lg-4"
-                  src="assets/img/landing/intro/features/sass.png"
+                  src="https://around.createx.studio/assets/img/landing/intro/features/sass.png"
                   width={56}
                   alt="Sass"
                 />
@@ -195,7 +168,7 @@ const Home = () => {
               <div className="pe-md-3 ps-lg-3 ps-xl-5">
                 <img
                   className="d-inline-block mb-3 mb-lg-4"
-                  src="assets/img/landing/intro/features/gulp.png"
+                  src="https://around.createx.studio/assets/img/landing/intro/features/gulp.png"
                   width={56}
                   alt="Gulp"
                 />
@@ -211,10 +184,6 @@ const Home = () => {
         </section>
         <section className="container">
           <div className="bg-dark position-relative rounded-5 overflow-hidden px-4 pt-1 pb-2 py-sm-4 py-lg-5">
-            <div
-              className="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100"
-              style={{ backgroundColor: "rgba(255,255,255, .02)" }}
-            />
             <div className="position-absolute top-0 end-0 pe-5 zindex-2">
               <svg
                 className="me-5"
@@ -228,40 +197,7 @@ const Home = () => {
                 <ellipse cx={257} cy="0.5" rx={257} ry="253.5" />
               </svg>
             </div>
-            <div className="d-none d-lg-flex position-absolute start-0 bottom-0 ms-n4">
-              <div
-                data-aos="fade-left"
-                data-aos-duration={700}
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <svg
-                  className="text-primary"
-                  width={117}
-                  height={117}
-                  viewBox="0 0 117 117"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="58.5" cy="58.5" r="58.5" />
-                </svg>
-              </div>
-              <div
-                data-aos="fade-right"
-                data-aos-duration={700}
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <svg
-                  className="text-warning"
-                  width={117}
-                  height={117}
-                  viewBox="0 0 117 117"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z" />
-                </svg>
-              </div>
-            </div>
+
             <div
               className="dark-mode position-relative zindex-3 text-center py-5 my-xl-3 mx-auto"
               style={{ maxWidth: 565 }}
