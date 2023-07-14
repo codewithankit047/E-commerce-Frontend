@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-          ShopNip
+            ShopNip
           </a>
           <button
             className="navbar-toggler"
@@ -23,28 +23,49 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to='/' className="nav-link active" aria-current="page"  >
+                <Link to="/" className="nav-link active" aria-current="page">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to='/add' className="nav-link active" aria-current="page"  >
+                <Link to="/add" className="nav-link active" aria-current="page">
                   Add Products
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to='/update' className="nav-link active" aria-current="page"  >
+                <Link
+                  to="/update"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Update Products
                 </Link>
               </li>
               <li className="nav-item ">
-                <Link to='/logout' className="nav-link active" aria-current="page"  >
-                Logout
+                <Link
+                  to="/logout"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Logout
                 </Link>
               </li>
               <li className="nav-item ">
-                <Link to='/profile' className="nav-link active" aria-current="page"  >
-                Profile
+                <Link
+                  to="/profile"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Profile
+                </Link>
+              </li>
+              <li className="nav-item ">
+                <Link
+                  to="/signup"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Signup
                 </Link>
               </li>
               {/* <li className="nav-item">

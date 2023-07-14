@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <>
         {/* Footer */}
-        <footer className="position-absolute bottom-0 text-center w-100 text-center text-lg-start bg-white text-muted">
+        <footer className=" bottom-0 text-center w-100 text-center text-lg-start bg-white text-muted">
           {/* Section: Social media */}
           <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div>
@@ -135,7 +135,7 @@ const Footer = () => {
           >
             © 2023 Copyright:
             <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            ShopNip.com
+              ShopNip.com
             </a>
           </div>
           {/* Copyright */}
