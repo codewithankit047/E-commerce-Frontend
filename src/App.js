@@ -4,6 +4,7 @@ import Header from "./Component/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Component/Footer";
 import SignUp from "./Component/Signup";
+import Home from "./Component/Home";
 
 function App() {
   return (
@@ -11,7 +12,14 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<h1>E-commerce home page</h1>} />
+          <Route
+            path="/"
+            element={<Home/>}
+          />
+          <Route
+            path="/dashboard"
+            element={<h1>E-commerce Dashboard page</h1>}
+          />
           <Route path="/add" element={<h1>Add product component page</h1>} />
           <Route
             path="/update"

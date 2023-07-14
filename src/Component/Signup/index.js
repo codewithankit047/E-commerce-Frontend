@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [singupdata, setSignupData] = useState({
     firstname: "",
     lastname: "",
@@ -19,6 +21,11 @@ const SignUp = () => {
     });
     result = await result.json();
     console.log(result);
+    if (result) {
+      navigate("/dashboard");
+    } else {
+      alert("Error in Sign Up!");
+    }
   };
   return (
     <>
