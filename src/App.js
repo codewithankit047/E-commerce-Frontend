@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route element={PrivateRoute}>
+          <Route element={<PrivateRoute/>}>
             <Route
               path="/dashboard"
               element={<h1>E-commerce Dashboard page</h1>}

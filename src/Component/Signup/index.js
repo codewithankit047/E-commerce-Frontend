@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
@@ -8,8 +8,16 @@ const SignUp = () => {
     lastname: "",
     email: "",
     password: "",
-    subscribe: true
+    subscribe: true,
   });
+
+  useEffect(() => {
+    const auth = localStorage.getItem("user");
+    if (auth) {
+      navigate("/");
+    }
+  }, []);
+
   const signupfunc = async () => {
     console.log("singupData", singupdata);
     let result = await fetch("http://localhost:5000/register", {
@@ -21,9 +29,12 @@ const SignUp = () => {
     });
     result = await result.json();
     console.log(result);
-    localStorage.setItem("user", JSON.stringify(result));
     if (result) {
       navigate("/dashboard");
+      localStorage.setItem("user", JSON.stringify(result));
+      localStorage.setItem("token", JSON.stringify(result.auth));
+
+      navigate("/");
     } else {
       alert("Error in Sign Up!");
     }
