@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Component/Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Footer from "./Component/Footer";
 import SignUp from "./Component/Signup";
 import Home from "./Component/Home";
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route element={<PrivateRoute/>}>
+          <Route element={<PrivateRoute />}>
             <Route
               path="/dashboard"
               element={<h1>E-commerce Dashboard page</h1>}

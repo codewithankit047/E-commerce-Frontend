@@ -2,18 +2,17 @@ import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
-  // const navigate = useNavigate();
-  // useEffect(() => {
-  //   const auth = localStorage.getItem("user");
-  //   if (!auth) {
-  //     navigate("/");
-  //   }
-  // });
+  const navigate = useNavigate();
+  const auth = localStorage.getItem("user");
+  const logout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             ShopNip
           </a>
           <button
@@ -48,15 +47,7 @@ const Header = () => {
                   Update Products
                 </Link>
               </li>
-              <li className="nav-item ">
-                <Link
-                  to="/logout"
-                  className="nav-link active"
-                  aria-current="page"
-                >
-                  Logout
-                </Link>
-              </li>
+
               <li className="nav-item ">
                 <Link
                   to="/profile"
@@ -66,15 +57,7 @@ const Header = () => {
                   Profile
                 </Link>
               </li>
-              <li className="nav-item ">
-                <Link
-                  to="/signup"
-                  className="nav-link active"
-                  aria-current="page"
-                >
-                  Signup
-                </Link>
-              </li>
+
               {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   Link
@@ -124,6 +107,27 @@ const Header = () => {
                 Search
               </button>
             </form>
+            <ul className="navbar-nav mr-0 mb-2 mb-lg-0">
+              <li className="nav-item ">
+                {auth ? (
+                  <Link
+                    onClick={logout}
+                    className="nav-link active"
+                    aria-current="page"
+                  >
+                    Logout
+                  </Link>
+                ) : (
+                  <Link
+                    to="/signup"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
+                    Signup
+                  </Link>
+                )}
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
