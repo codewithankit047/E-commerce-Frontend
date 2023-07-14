@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Component/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./Component/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/logout" element={<h1> Logout page</h1>} />
           <Route path="/profile" element={<h1> profile page</h1>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
