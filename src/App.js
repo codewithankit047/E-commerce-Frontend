@@ -9,8 +9,9 @@ import PrivateRoute from "./Component/PrivateRoute";
 import Login from "./Component/Login";
 import Dashboard from "./Component/Dashboard";
 import AddProduct from "./Component/Product/AddProduct";
-import UpdateProduct from "./Component/Product/updateProduct";
 import Profile from "./Component/Profile";
+import ProductListing from "./Component/Product/ProductListing";
+import UpdateProduct from "./Component/Product/UpdateProduct";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route element={<PrivateRoute />}>
             <Route path="/" element={<Dashboard />} />
 
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<ProductListing />} />
             <Route path="/add" element={<AddProduct />} />
             <Route path="/update" element={<UpdateProduct />} />
             <Route path="/profile" element={<Profile />} />
