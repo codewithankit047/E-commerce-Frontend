@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../Header";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -42,6 +43,7 @@ const SignUp = () => {
   return (
     <>
       {/* Section: Design Block */}
+      <Header/>
       <section className="text-center text-lg-start">
         <style
           dangerouslySetInnerHTML={{

@@ -10,7 +10,7 @@ import Login from "./Component/Login";
 import Dashboard from "./Component/Dashboard";
 import AddProduct from "./Component/Product/AddProduct";
 import UpdateProduct from "./Component/Product/updateProduct";
-import Profile from "./Component/Product/Profile";
+import Profile from "./Component/Profile";
 
 function App() {
   return (

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../Header";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -43,7 +44,7 @@ const Login = () => {
   };
   return (
     <>
-      {" "}
+      <Header />{" "}
       <div className="container">
         <section className="vh-100">
           <div className="container py-5 h-100">
