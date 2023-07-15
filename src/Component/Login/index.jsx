@@ -64,7 +64,6 @@ const Login = () => {
                   <div className="form-outline mb-4">
                     <input
                       type="email"
-                      id="form1Example13"
                       className="form-control form-control-lg"
                       name="email"
                       required=""
@@ -83,7 +82,6 @@ const Login = () => {
                   <div className="form-outline mb-4">
                     <input
                       type="password"
-                      id="form1Example23"
                       className="form-control form-control-lg"
                       name="password"
                       required=""
@@ -112,8 +110,7 @@ const Login = () => {
                         className="form-check-label"
                         htmlFor="form1Example3"
                       >
-                        {" "}
-                        Remember me{" "}
+                        Remember me
                       </label>
                     </div>
                     <a href="#!">Forgot password?</a>

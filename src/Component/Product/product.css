@@ -1,0 +1,70 @@
+.gradient-custom {
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.card-custom {
+  border-bottom-left-radius: 10% 50%;
+  border-top-left-radius: 10% 50%;
+  background-color: #f8f9fa;
+}
+
+.input-custom {
+  background-color: white;
+}
+
+.white-text {
+  color: hsl(52, 0%, 98%);
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.back-button {
+  background-color: hsl(52, 0%, 98%);
+  font-weight: 700;
+  color: black;
+  margin-top: 50px;
+}
+/* update Product css */
+body {
+  background: #eee;
+}
+.ratings i {
+  font-size: 16px;
+  color: red;
+}
+.strike-text {
+  color: red;
+  text-decoration: line-through;
+}
+.product-image {
+  width: 100%;
+}
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.spec-1 {
+  color: #938787;
+  font-size: 15px;
+}
+h5 {
+  font-weight: 400;
+}
+.para {
+  white-space: normal;
+  font-size: 16px;
+}
+
+.svg-container {
+  display: flex;
+}
+
+.svg-item {
+  margin-right: 10px; /* Add spacing between items */
+}
