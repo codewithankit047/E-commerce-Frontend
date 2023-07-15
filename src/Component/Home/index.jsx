@@ -4,7 +4,7 @@ import Header from "../Header";
 const Home = () => {
   return (
     <>
-    <Header/>
+      <Header />
       <section className="bg-dark dark-mode position-relative min-vh-100 overflow-hidden pt-5">
         <svg
           className="position-absolute top-0"
@@ -211,11 +211,8 @@ const Home = () => {
               </p>
               <form
                 className="subscription-form validate mx-auto"
-                action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;id=29ca296126"
-                method="post"
+                action="#"
                 name="mc-embedded-subscribe-form"
-                target="_blank"
-                noValidate=""
                 style={{ maxWidth: 500 }}
               >
                 <div className="input-group">
