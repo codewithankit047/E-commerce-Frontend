@@ -6,9 +6,12 @@ import { useNavigate } from "react-router-dom";
 const ProductListing = () => {
   const navigate = useNavigate();
   const [productdata, setProductData] = useState("");
+  const user_id = JSON.parse(localStorage.getItem("user"));
   const [message, setMessge] = useState("");
   const getproductFunc = async () => {
-    let result = await fetch("http://localhost:5000/get-product");
+    let result = await fetch(
+      `http://localhost:5000/get-product/${user_id._id}`
+    );
     result = await result.json();
     console.log(result);
     setProductData(result);
