@@ -74,7 +74,7 @@ const SignUp = () => {
                             id="form3Example1"
                             className="form-control"
                             name="firstname"
-                            required=""
+                            required
                             onChange={(e) =>
                               setSignupData((pre) => ({
                                 ...pre,
@@ -94,7 +94,7 @@ const SignUp = () => {
                             id="form3Example2"
                             className="form-control"
                             name="lastname"
-                            required=""
+                            required
                             onChange={(e) =>
                               setSignupData((pre) => ({
                                 ...pre,
@@ -116,7 +116,7 @@ const SignUp = () => {
                         id="form3Example3"
                         className="form-control"
                         name="email"
-                        required=""
+                        required
                         onChange={(e) =>
                           setSignupData((pre) => ({
                             ...pre,
@@ -136,7 +136,7 @@ const SignUp = () => {
                         id="form3Example4"
                         className="form-control"
                         name="password"
-                        required=""
+                        required
                         onChange={(e) =>
                           setSignupData((pre) => ({
                             ...pre,
@@ -157,7 +157,7 @@ const SignUp = () => {
                         id="form2Example33"
                         defaultChecked=""
                         name="subscribe"
-                        required=""
+                        required
                         onChange={(e) =>
                           setSignupData((pre) => ({
                             ...pre,

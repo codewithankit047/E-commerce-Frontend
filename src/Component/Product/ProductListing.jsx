@@ -134,12 +134,13 @@ const ProductListing = () => {
                             </span>
                           </button>
 
-                          <button
+                          <a
                             className="btn btn-outline-primary btn-sm mt-2"
                             type="button"
+                            href={"/update/" + item?._id}
                           >
                             Update
-                          </button>
+                          </a>
                         </div>
                         {message}
                       </div>

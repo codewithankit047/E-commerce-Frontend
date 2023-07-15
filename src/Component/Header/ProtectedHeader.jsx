@@ -44,15 +44,15 @@ const DashboardHeader = () => {
                   Add Products
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   to="/update"
                   className="nav-link active"
                   aria-current="page"
                 >
                   Update Products
-                </Link>
-              </li>
+                </Link> */}
+              {/* </li> */}
 
               <li className="nav-item ">
                 <Link
